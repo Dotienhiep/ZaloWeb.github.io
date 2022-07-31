@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fickity/flickity.css">
+    <link rel="stylesheet" href="font-awesome.min (1).css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="avatar-toggle">
+                <span class="icon toggle-btn" onclick="handleToggleListZalo()">
+                    <img src="images/avatar.jpg" alt="">
+                </span>
+                <div class="list-zalo">
+                    <div class="zalo-item"><i class="fas fa-user"></i>Tài khoản</div>
+                    <div class="zalo-item"><i class="fas fa-cog"></i>Cài đặt</div>
+                    <div class="underline">
+                        <hr>
+                    </div>
+                    <div class="zalo-item">Đăng xuất</div>
+                    <div class="underline">
+                        <hr>
+                    </div>
+                    <div class="zalo-item">Zalo version V22.1.1</div>
+                    <div class="zalo-item">Mời đồng nghiệp sử dụng zalo PC <img src="images/hihi.png" alt=""></div>
+                </div>
+            </div>
+            <div class="list-search">
+                <ul>
+                    <li><a href=""><i class="fas fa-comments"></i></a></li>
+                    <li><a href="update.html"><i class="fas fa-address-book"></i></a></li>
+                    <li><a href=""><i class="fas fa-bell"></i></a></li>
+                    <li><a href=""><i class="far fa-check-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="list-tool">
+                <ul>
+                    <li><a href=""><i class="fas fa-cloud"></i></a></li>
+                    <li><a href=""><i class="far fa-square"></i></a></li>
+                    <li><a href=""><i class="far fa-star"></i></a></li>
+                    <li><a href=""><i class="fas fa-cog"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box-chat">
+            <div class="title-zalo">
+                <span>Zalo - Đỗ Tiến Hiệp</span>
+            </div>
+            <div class="box">
+                <div class="left-toolbar">
+                    <div class="search">
+                        <div class="search-add">
+                            <input type="text" autocomplete="on" placeholder="Tìm kiếm.">
+                            <i class="fas fa-search"></i>
+                            <div class="add">
+                                <span><a href=""><i class="fas fa-user-plus"></i></a></span>
+                                <span><a href=""><i class="fas fa-users"></i></a></span>
+                            </div>
+                        </div>
+                        <div class="scroll">
+                            <ul>
+                                <li><a href="">Tất cả</a></li>
+                                <li><a href="">Chưa đọc</a></li>
+                            </ul>
+                            <div class="classic">
+                                <button onclick="handleToggleClassic()" class="class-ic toggle-btn">Phân loại <i class="fas fa-chevron-down"></i></button>
+                                <div class="list-classify">
+                                    <div class="class-item"><i class="fas fa-user-times"></i>Tin nhắn từ người lạ</div>
+                                    <div class="underline">
+                                        <hr>
+                                    </div>
+                                    <div class="class-item"><i class="fas fa-tshirt"></i>Quản lí phân loại </div>
+                                </div>
+                            </div>
+                            <div class="select-zalo">
+                                <span onclick="handleToggleSelect()" class="ahihi"><a href=""><i onclick="handleToggleSelect()" class="fas fa-ellipsis-h"></i></a></span>
+                                <div class="list-select">
+                                    <div class="select-item">Đánh dấu đã đọc</div>
+                                    <div class="select-item">Đọc tin nhắn đồng thời</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scrollbar-message">
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                        <div class="message-chat">
+                            <div class="avatar-chat">
+                                <div class="image">
+                                    <img src="images/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content-chat">
+                                <div class="title">
+                                    <div class="name">Hêhheheee</div>
+                                    <div class="time">vài giây</div>
+                                </div>
+                                <span class="content">Xin đừng lặng im</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-toolbar">
+                    <div class="introduce">
+                        <div class="title">Chào mừng bạn đến với <span>Zalo PC !</span></div>
+                        <div class="content">Khám phá những tiện ích hỗ trợ làm việc và trò chuyện cùng người thân , bạn bè được tối ưu
+                            hoá cho máy tính của bạn.</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="main-carousel">
+                            <div class="carousel-cell box">
+                              <span>
+                                  <img src="images/1.jpg" alt="">
+                              </span>
+                              <h4>Gọi nhóm và làm việc hiệu quả với Zalo Gruop Call</h4>
+                              <p>Trao đổi công việc mọi lúc mọi nơi</p>
+                            </div>
+                            <div class="carousel-cell box">
+                              <span>
+                                <img src="images/2.jpg" alt="">
+                              </span>
+                              <h4>Trải nghiệm xuyên suốt</h4>
+                              <p>Kết nối và giải quyết mọi công việc trên mọi thiết bị và dữ liệu được đồng bộ</p>
+                            </div>
+                            <div class="carousel-cell box">
+                              <span>
+                                <img src="images/3.jpg" alt="">
+                              </span>
+                              <h4>Gửi File năng ?</h4>
+                              <p>Đã có Zalo PC "xử" hết</p>
+                            </div>
+                            <div class="carousel-cell box">
+                              <span>
+                                <img src="images/4.png" alt="">
+                              </span>
+                              <h4>Chat nhóm với đồng nghiệp</h4>
+                              <p>Tiện lợi hơn ,nhờ các công cụ hỗ trợ trên máy tính</p>
+                            </div>
+                            <div class="carousel-cell box">
+                              <span>
+                                <img src="images/5.jpg" alt="">
+                              </span>
+                              <h4>Gỉai quyết công việc hịệu quả hơn , lên đến 40%</h4>
+                              <p>Với Zalo PC</p>
+                            </div>
+                            <div class="carousel-cell box">
+                              <span>
+                                <img src="images/6.png" alt="">
+                              </span>
+                              <h4>Nhắn tin nhiều hơn , soạn thảo ít hơn</h4>
+                              <p>Sử dụng tin nhắn nhanh để lưu sẵn các tin nhắn thường dùng và gửi nhanh trong hội thoại bất kì</p>
+                            </div>
+                            <div class="carousel-cell box">
+                                <span>
+                                  <img src="images/7.png" alt="">
+                                </span>
+                                <h4>Tin nhắn tự xoá</h4>
+                                <p>Từ giờ tin nhắn có thể tự động tự xoá sau khoảng thời gian nhất định.</p>
+                              </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="fickity/flickity.js"></script>
+<script src="index.js"></script>
+<script src="fontawesome.min (1).js"></script>
+
+</html>

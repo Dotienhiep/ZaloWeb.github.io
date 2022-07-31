@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome.min (1).css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="avatar-toggle">
+                <span class="icon toggle-btn" onclick="handleToggleListZalo()">
+                    <img src="images/avatar.jpg" alt="">
+                </span>
+                <div class="list-zalo">
+                    <div class="zalo-item"><i class="fas fa-user"></i>Tài khoản</div>
+                    <div class="zalo-item"><i class="fas fa-cog"></i>Cài đặt</div>
+                    <div class="underline">
+                        <hr>
+                    </div>
+                    <div class="zalo-item">Đăng xuất</div>
+                    <div class="underline">
+                        <hr>
+                    </div>
+                    <div class="zalo-item">Zalo version V22.1.1</div>
+                    <div class="zalo-item">Mời đồng nghiệp sử dụng zalo PC <img src="images/hihi.png" alt=""></div>
+                </div>
+            </div>
+            <div class="list-search">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-comments"></i></a></li>
+                    <li><a href=""><i class="fas fa-address-book"></i></a></li>
+                    <li><a href=""><i class="fas fa-bell"></i></a></li>
+                    <li><a href=""><i class="far fa-check-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="list-tool">
+                <ul>
+                    <li><a href=""><i class="fas fa-cloud"></i></a></li>
+                    <li><a href=""><i class="far fa-square"></i></a></li>
+                    <li><a href=""><i class="far fa-star"></i></a></li>
+                    <li><a href=""><i class="fas fa-cog"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box-chat">
+            <div class="title-zalo">
+                <span>Zalo - Đỗ Tiến Hiệp</span>
+            </div>
+        <div class="box">
+            <div class="left-toolbar">
+                <div class="search-up">
+                    <div class="search-add">
+                        <input type="text" placeholder="Tìm kiếm.">
+                        <i class="fas fa-search"></i>
+                        <div class="add">
+                            <span><a href=""><i class="fas fa-user-plus"></i></a></span>
+                            <span><a href=""><i class="fas fa-users"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="scrollbar-message-up">
+                    <div class="message-chat-up">
+                        <span><i class="fas fa-user-plus"></i>Thêm bạn bằng số điện thoại</span>
+                    </div>
+                    <div onclick="handleClickFriend()" class="message-chat-up">
+                        <div class="avatar-chat">
+                            <div class="image">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                        </div>
+                        <div class="content-chat">
+                            <div class="title">
+                                <p>Danh sách kết bạn</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-chat-up">
+                        <div class="avatar-chat">
+                            <div class="image">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        <div class="content-chat">
+                            <div class="title">
+                                <p>Danh sách nhóm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="underline">
+                        <hr>
+                    </div>
+                    <div class="message-hehe">
+                        <span>Gửi file giữa di động và máy tính</span>
+                    </div>
+                    <div class="message-chat-up">
+                        <div class="avatar-chat">
+                            <div class="image">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                        </div>
+                        <div class="content-chat">
+                            <div class="title">
+                                <p>Cloud của tôi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="underline">
+                        <hr>
+                    </div>
+                    <div class="list-friend">
+                        <div class="friend">
+                            <span>Bạn bè (100)<i class="fas fa-chevron-down"></i></span>
+                        </div>
+                    </div>
+                    <div class="message-chat">
+                        <div class="avatar-chat">
+                            <div class="image">
+                                <img src="images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-chat">
+                            <div class="title">
+                                <div class="name">Hêhheheee</div>
+                                <div class="time">vài giây</div>
+                            </div>
+                            <span class="content">Xin đừng lặng im</span>
+                        </div>
+                    </div>
+                    <div class="message-chat">
+                        <div class="avatar-chat">
+                            <div class="image">
+                                <img src="images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-chat">
+                            <div class="title">
+                                <div class="name">Hêhheheee</div>
+                                <div class="time">vài giây</div>
+                            </div>
+                            <span class="content">Xin đừng lặng im</span>
+                        </div>
+                    </div>
+                    <div class="message-chat">
+                        <div class="avatar-chat">
+                            <div class="image">
+                                <img src="images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-chat">
+                            <div class="title">
+                                <div class="name">Hêhheheee</div>
+                                <div class="time">vài giây</div>
+                            </div>
+                            <span class="content">Xin đừng lặng im</span>
+                        </div>
+                    </div>
+                    <div class="message-chat">
+                        <div class="avatar-chat">
+                            <div class="image">
+                                <img src="images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-chat">
+                            <div class="title">
+                                <div class="name">Hêhheheee</div>
+                                <div class="time">vài giây</div>
+                            </div>
+                            <span class="content">Xin đừng lặng im</span>
+                        </div>
+                    </div>
+                    <div class="message-chat">
+                        <div class="avatar-chat">
+                            <div class="image">
+                                <img src="images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-chat">
+                            <div class="title">
+                                <div class="name">Hêhheheee</div>
+                                <div class="time">vài giây</div>
+                            </div>
+                            <span class="content">Xin đừng lặng im</span>
+                        </div>
+                    </div>
+                    <div class="message-chat">
+                        <div class="avatar-chat">
+                            <div class="image">
+                                <img src="images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-chat">
+                            <div class="title">
+                                <div class="name">Hêhheheee</div>
+                                <div class="time">vài giây</div>
+                            </div>
+                            <span class="content">Xin đừng lặng im</span>
+                        </div>
+                    </div>
+                    <div class="message-chat">
+                        <div class="avatar-chat">
+                            <div class="image">
+                                <img src="images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-chat">
+                            <div class="title">
+                                <div class="name">Hêhheheee</div>
+                                <div class="time">vài giây</div>
+                            </div>
+                            <span class="content">Xin đừng lặng im</span>
+                        </div>
+                    </div>
+                    <div class="message-chat">
+                        <div class="avatar-chat">
+                            <div class="image">
+                                <img src="images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-chat">
+                            <div class="title">
+                                <div class="name">Hêhheheee</div>
+                                <div class="time">vài giây</div>
+                            </div>
+                            <span class="content">Xin đừng lặng im</span>
+                        </div>
+                    </div>
+                    <div class="message-chat">
+                        <div class="avatar-chat">
+                            <div class="image">
+                                <img src="images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-chat">
+                            <div class="title">
+                                <div class="name">Hêhheheee</div>
+                                <div class="time">vài giây</div>
+                            </div>
+                            <span class="content">Xin đừng lặng im</span>
+                        </div>
+                    </div>
+                    <div class="message-chat">
+                        <div class="avatar-chat">
+                            <div class="image">
+                                <img src="images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-chat">
+                            <div class="title">
+                                <div class="name">Hêhheheee</div>
+                                <div class="time">vài giây</div>
+                            </div>
+                            <span class="content">Xin đừng lặng im</span>
+                        </div>
+                    </div>
+                    <div class="message-chat">
+                        <div class="avatar-chat">
+                            <div class="image">
+                                <img src="images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-chat">
+                            <div class="title">
+                                <div class="name">Hêhheheee</div>
+                                <div class="time">vài giây</div>
+                            </div>
+                            <span class="content">Xin đừng lặng im</span>
+                        </div>
+                    </div>
+                    <div class="message-chat">
+                        <div class="avatar-chat">
+                            <div class="image">
+                                <img src="images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-chat">
+                            <div class="title">
+                                <div class="name">Hêhheheee</div>
+                                <div class="time">vài giây</div>
+                            </div>
+                            <span class="content">Xin đừng lặng im</span>
+                        </div>
+                    </div>
+                    <div class="message-chat">
+                        <div class="avatar-chat">
+                            <div class="image">
+                                <img src="images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-chat">
+                            <div class="title">
+                                <div class="name">Hêhheheee</div>
+                                <div class="time">vài giây</div>
+                            </div>
+                            <span class="content">Xin đừng lặng im</span>
+                        </div>
+                    </div>
+                    <div class="message-chat">
+                        <div class="avatar-chat">
+                            <div class="image">
+                                <img src="images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-chat">
+                            <div class="title">
+                                <div class="name">Hêhheheee</div>
+                                <div class="time">vài giây</div>
+                            </div>
+                            <span class="content">Xin đừng lặng im</span>
+                        </div>
+                    </div>
+                    <div class="message-chat">
+                        <div class="avatar-chat">
+                            <div class="image">
+                                <img src="images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-chat">
+                            <div class="title">
+                                <div class="name">Hêhheheee</div>
+                                <div class="time">vài giây</div>
+                            </div>
+                            <span class="content">Xin đừng lặng im</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-toolbar-up">
+                <div class="nav-right">
+                    <div class="avatar-chat">
+                        <div class="image">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                    <div class="content-chat">
+                        <div class="title">
+                            <p>Danh sách kết bạn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-friend">
+                    <div class="list-scroll">
+                            <div class="friends">
+                                <div class="avt-fri">
+                                    <span>
+                                        <img src="images/avatar.jpg" alt="">
+                                    </span>
+                                </div>
+                                <h4>Bác Mẫn</h4>
+                                <span>Từ gợi ý số điện thoại</span>
+                                <p>Chưa có nhóm chung</p>
+                                <div class="fri-btn">
+                                    <button>Kết bạn</button>
+                                </div>
+                                <div class="icon-fri">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="friends">
+                                <div class="avt-fri">
+                                    <span>
+                                        <img src="images/avatar.jpg" alt="">
+                                    </span>
+                                </div>
+                                <h4>Bác Mẫn</h4>
+                                <span>Từ gợi ý số điện thoại</span>
+                                <p>Chưa có nhóm chung</p>
+                                <div class="fri-btn">
+                                    <button>Kết bạn</button>
+                                </div>
+                                <div class="icon-fri">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="friends">
+                                <div class="avt-fri">
+                                    <span>
+                                        <img src="images/avatar.jpg" alt="">
+                                    </span>
+                                </div>
+                                <h4>Bác Mẫn</h4>
+                                <span>Từ gợi ý số điện thoại</span>
+                                <p>Chưa có nhóm chung</p>
+                                <div class="fri-btn">
+                                    <button>Kết bạn</button>
+                                </div>
+                                <div class="icon-fri">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="friends">
+                                <div class="avt-fri">
+                                    <span>
+                                        <img src="images/avatar.jpg" alt="">
+                                    </span>
+                                </div>
+                                <h4>Bác Mẫn</h4>
+                                <span>Từ gợi ý số điện thoại</span>
+                                <p>Chưa có nhóm chung</p>
+                                <div class="fri-btn">
+                                    <button>Kết bạn</button>
+                                </div>
+                                <div class="icon-fri">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="friends">
+                                <div class="avt-fri">
+                                    <span>
+                                        <img src="images/avatar.jpg" alt="">
+                                    </span>
+                                </div>
+                                <h4>Bác Mẫn</h4>
+                                <span>Từ gợi ý số điện thoại</span>
+                                <p>Chưa có nhóm chung</p>
+                                <div class="fri-btn">
+                                    <button>Kết bạn</button>
+                                </div>
+                                <div class="icon-fri">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="friends">
+                                <div class="avt-fri">
+                                    <span>
+                                        <img src="images/avatar.jpg" alt="">
+                                    </span>
+                                </div>
+                                <h4>Bác Mẫn</h4>
+                                <span>Từ gợi ý số điện thoại</span>
+                                <p>Chưa có nhóm chung</p>
+                                <div class="fri-btn">
+                                    <button>Kết bạn</button>
+                                </div>
+                                <div class="icon-fri">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="friends">
+                                <div class="avt-fri">
+                                    <span>
+                                        <img src="images/avatar.jpg" alt="">
+                                    </span>
+                                </div>
+                                <h4>Bác Mẫn</h4>
+                                <span>Từ gợi ý số điện thoại</span>
+                                <p>Chưa có nhóm chung</p>
+                                <div class="fri-btn">
+                                    <button>Kết bạn</button>
+                                </div>
+                                <div class="icon-fri">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="friends">
+                                <div class="avt-fri">
+                                    <span>
+                                        <img src="images/avatar.jpg" alt="">
+                                    </span>
+                                </div>
+                                <h4>Bác Mẫn</h4>
+                                <span>Từ gợi ý số điện thoại</span>
+                                <p>Chưa có nhóm chung</p>
+                                <div class="fri-btn">
+                                    <button>Kết bạn</button>
+                                </div>
+                                <div class="icon-fri">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="friends">
+                                <div class="avt-fri">
+                                    <span>
+                                        <img src="images/avatar.jpg" alt="">
+                                    </span>
+                                </div>
+                                <h4>Bác Mẫn</h4>
+                                <span>Từ gợi ý số điện thoại</span>
+                                <p>Chưa có nhóm chung</p>
+                                <div class="fri-btn">
+                                    <button>Kết bạn</button>
+                                </div>
+                                <div class="icon-fri">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="friends">
+                                <div class="avt-fri">
+                                    <span>
+                                        <img src="images/avatar.jpg" alt="">
+                                    </span>
+                                </div>
+                                <h4>Bác Mẫn</h4>
+                                <span>Từ gợi ý số điện thoại</span>
+                                <p>Chưa có nhóm chung</p>
+                                <div class="fri-btn">
+                                    <button>Kết bạn</button>
+                                </div>
+                                <div class="icon-fri">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="friends">
+                                <div class="avt-fri">
+                                    <span>
+                                        <img src="images/avatar.jpg" alt="">
+                                    </span>
+                                </div>
+                                <h4>Bác Mẫn</h4>
+                                <span>Từ gợi ý số điện thoại</span>
+                                <p>Chưa có nhóm chung</p>
+                                <div class="fri-btn">
+                                    <button>Kết bạn</button>
+                                </div>
+                                <div class="icon-fri">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="friends">
+                                <div class="avt-fri">
+                                    <span>
+                                        <img src="images/avatar.jpg" alt="">
+                                    </span>
+                                </div>
+                                <h4>Bác Mẫn</h4>
+                                <span>Từ gợi ý số điện thoại</span>
+                                <p>Chưa có nhóm chung</p>
+                                <div class="fri-btn">
+                                    <button>Kết bạn</button>
+                                </div>
+                                <div class="icon-fri">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="friends">
+                                <div class="avt-fri">
+                                    <span>
+                                        <img src="images/avatar.jpg" alt="">
+                                    </span>
+                                </div>
+                                <h4>Bác Mẫn</h4>
+                                <span>Từ gợi ý số điện thoại</span>
+                                <p>Chưa có nhóm chung</p>
+                                <div class="fri-btn">
+                                    <button>Kết bạn</button>
+                                </div>
+                                <div class="icon-fri">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="friends">
+                                <div class="avt-fri">
+                                    <span>
+                                        <img src="images/avatar.jpg" alt="">
+                                    </span>
+                                </div>
+                                <h4>Bác Mẫn</h4>
+                                <span>Từ gợi ý số điện thoại</span>
+                                <p>Chưa có nhóm chung</p>
+                                <div class="fri-btn">
+                                    <button>Kết bạn</button>
+                                </div>
+                                <div class="icon-fri">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="friends">
+                                <div class="avt-fri">
+                                    <span>
+                                        <img src="images/avatar.jpg" alt="">
+                                    </span>
+                                </div>
+                                <h4>Bác Mẫn</h4>
+                                <span>Từ gợi ý số điện thoại</span>
+                                <p>Chưa có nhóm chung</p>
+                                <div class="fri-btn">
+                                    <button>Kết bạn</button>
+                                </div>
+                                <div class="icon-fri">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="friends">
+                                <div class="avt-fri">
+                                    <span>
+                                        <img src="images/avatar.jpg" alt="">
+                                    </span>
+                                </div>
+                                <h4>Bác Mẫn</h4>
+                                <span>Từ gợi ý số điện thoại</span>
+                                <p>Chưa có nhóm chung</p>
+                                <div class="fri-btn">
+                                    <button>Kết bạn</button>
+                                </div>
+                                <div class="icon-fri">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="friends">
+                                <div class="avt-fri">
+                                    <span>
+                                        <img src="images/avatar.jpg" alt="">
+                                    </span>
+                                </div>
+                                <h4>Bác Mẫn</h4>
+                                <span>Từ gợi ý số điện thoại</span>
+                                <p>Chưa có nhóm chung</p>
+                                <div class="fri-btn">
+                                    <button>Kết bạn</button>
+                                </div>
+                                <div class="icon-fri">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="friends">
+                                <div class="avt-fri">
+                                    <span>
+                                        <img src="images/avatar.jpg" alt="">
+                                    </span>
+                                </div>
+                                <h4>Bác Mẫn</h4>
+                                <span>Từ gợi ý số điện thoại</span>
+                                <p>Chưa có nhóm chung</p>
+                                <div class="fri-btn">
+                                    <button>Kết bạn</button>
+                                </div>
+                                <div class="icon-fri">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="index.js"></script>
+<script src="fontawesome.min (1).js"></script>
+
+</html>
